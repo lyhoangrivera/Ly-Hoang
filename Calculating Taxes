@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class Calculations
+{
+   public static void main(String[] args)
+   {
+      Scanner kb = new Scanner(System.in);
+      System.out.print("Enter a number: ");
+      int firstNum = kb.nextInt();
+      kb.nextLine();
+      System.out.print("Enter a second number: ");
+      int secondNum = kb.nextInt();
+      kb.nextLine();
+      System.out.print("Enter a string: ");
+      String firstStr = kb.nextLine();
+      System.out.print("Enter a second string: ");
+      String secondStr = kb.nextLine();
+
+      int add = firstNum + secondNum;
+      int sub = firstNum - secondNum;
+      int mult = firstNum * secondNum;
+      int division = firstNum / secondNum;
+      int remainder = firstNum % secondNum;
+      double division2 = (double)firstNum / secondNum;
+
+      String up = firstStr.toUpperCase();
+      String low = secondStr.toLowerCase();
+      char firstChar1 = firstStr.charAt(0);
+      char firstChar2 = secondStr.charAt(0);
+      char lastChar1 = firstStr.charAt(firstStr.length() - 1);
+      char lastChar2 = secondStr.charAt(secondStr.length() - 1);
+      
+      System.out.println(firstNum +  " + " + secondNum
+			 + " = " + add);
+      System.out.println(firstNum + " - " + secondNum
+			 + " = " + sub);
+      System.out.println(firstNum + " * " + secondNum
+			 + " = " + mult);
+      System.out.println(firstNum + " / " + secondNum
+			 + " = " + division);
+      System.out.println(firstNum + " % " + secondNum
+			 + " = " + remainder);
+      System.out.println(firstNum + " / " + secondNum
+			 + " = " + division2);
+    
+      System.out.println("First word, uppercase: " + up);
+      System.out.println("Second word, lowercase: " + low);
+      System.out.println("First characters: " + firstChar1 
+ 			  + " and " + firstChar2);
+      System.out.println("Last characters: " + lastChar1
+			  + " and " + lastChar2);
+   }
+}
